@@ -19,6 +19,6 @@ data["predicted_service_km"] = (                 # predicting service km
 data["predicted_tyre_km"] = (                 #predicting tyre km 
     (100 - data["tyre_wear_level"]) * np.random.randint(50, 100, num_samples)
 )
-df = pd.DataFrame(data)
+df = pd.DataFrame(data)  #putting in dataframe
 df.to_csv("data/car_maintenance_data.csv", index=False)
 print("Dataset Generated")
